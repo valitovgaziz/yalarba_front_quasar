@@ -1,4 +1,5 @@
 export default {
+  appName: 'YalArba',
   shortLangU: 'EN',
   shortLangL: 'en',
   lang: 'English',
