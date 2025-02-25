@@ -8,7 +8,7 @@ export interface Meta {
 }
 
 export interface User {
-  is: number,
+  id: number,
   name: string,
   email: string,
 }

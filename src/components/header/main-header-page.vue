@@ -1,6 +1,6 @@
 <template>
   <!-- Заголовок -->
-  <q-header hide-on-scroll>
+  <q-header elevated>
     <q-toolbar>
       <q-toolbar-title>
         {{ t('appName') }}
