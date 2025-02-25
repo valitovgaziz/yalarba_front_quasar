@@ -1,24 +1,27 @@
 <template>
-  <q-layout view="LHH lPr fFf">
-    <!-- Заголовок -->
-    <q-header elevated>
-      <q-toolbar>
-        <q-toolbar-title>
-          {{ t('appName') }}
-        </q-toolbar-title>
-        <q-btn flat dense round icon="menu" />
-      </q-toolbar>
-    </q-header>
-
+  <q-layout class="column justify-center items-center">
+    <HeaderMain />
     <!-- Основное содержимое страницы -->
-    <q-page-container>
+    <q-page-container class="main-content" q-scroll-area>
       <q-page>
+        <MainHomePageComponent />
+        <MainHomePageComponent />
+        <MainHomePageComponent />
+        <MainHomePageComponent />
+        <MainHomePageComponent />
+        <MainHomePageComponent />
+        <MainHomePageComponent />
+        <MainHomePageComponent />
+        <MainHomePageComponent />
+        <MainHomePageComponent />
+        <MainHomePageComponent />
+        <MainHomePageComponent />
         <MainHomePageComponent />
       </q-page>
     </q-page-container>
 
     <!-- Подвал -->
-    <q-footer elevated>
+    <q-footer>
       Footer
     </q-footer>
   </q-layout>
@@ -26,10 +29,9 @@
 
 <script setup lang="ts">
 import MainHomePageComponent from 'components/MainHomePage.vue';
-import { useI18n } from 'vue-i18n';
-const { t } = useI18n();
+import HeaderMain from 'components/header/main-header-page.vue'
 </script>
 
-<style scoped lang="scss">
+<style scoped lang="sass">
 /* Дополнительные стили, если они необходимы */
 </style>
